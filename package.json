@@ -1,0 +1,27 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "Expense Tracker",
+  "main": "Server.js",
+  "scripts": {
+    "start": "node Server.js",
+    "Server": "nodemon Server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm start \" \"npm run client\" "
+  },
+  "keywords": [],
+  "author": "-Ashish",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "moment": "^2.30.1",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0",
+    "react-router-dom": "^6.25.1"
+  }
+}
